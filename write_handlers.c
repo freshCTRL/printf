@@ -239,7 +239,7 @@ else if (!(flags & F_MINUS) && padd == '0')/* extra char to left of padd */
 if (extra_c)
 buffer[--padd_start] = extra_c;
 buffer[1] = '0';
-uffer[2] = 'x';
+buffer[2] = 'x';
 return (write(1, &buffer[padd_start], i - padd_start) +
 		write(1, &buffer[ind], length - (1 - padd_start) - 2));
 }
